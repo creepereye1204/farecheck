@@ -1,0 +1,49 @@
+{
+  "id": "C05",
+  "description": "강남역 → 김포국제공항, 10:00 승차, 시나리오 toll",
+  "image": "C05.png",
+  "receipt": {
+    "total_fare": 33600,
+    "meter_fare": 28600,
+    "toll_fee": 5000,
+    "ride_start": "2026-11-08T10:00:00+09:00",
+    "ride_end": "2026-11-08T10:45:00+09:00",
+    "night_surcharge": false,
+    "out_of_city_surcharge": false,
+    "distance_km": null,
+    "vehicle_no": "서울30사3918",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "강남역",
+    "address": "서울 강남구 역삼동",
+    "region": "서울",
+    "x": 127.0276,
+    "y": 37.4979,
+    "tags": []
+  },
+  "destination": {
+    "name": "김포국제공항",
+    "address": "서울 강서구 하늘길 38",
+    "region": "서울",
+    "x": 126.8013,
+    "y": 37.5583,
+    "tags": [
+      "GMP_AIRPORT"
+    ]
+  },
+  "meter_used": true,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 25000,
+    "duration_s": 2700,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "CHECK_NEEDED",
+  "expected_reasons": [
+    "TOLL_MISMATCH"
+  ],
+  "generated_ratio_target": 0.8
+}

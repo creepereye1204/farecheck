@@ -1,0 +1,25 @@
+[외국인 관광객 택시 요금 확인 요청]
+
+1. 탑승 정보
+ - 승차: {{ ride_start }} / 하차: {{ ride_end }}
+ - 출발: {{ origin_name }} ({{ origin_address }})
+ - 도착: {{ dest_name }} ({{ dest_address }})
+ - 차량번호: {{ vehicle_no or "확인 불가" }}
+ - 결제 금액: {{ total_fare | won }}원 (미터기 {{ meter_fare | won }}원, 통행료 {{ toll_fee | won }}원)
+{% if calc %}
+2. 정상 요금 상한 계산 (서울 중형택시 요금표, {{ rule_version }})
+ - 도로 경로 거리 {{ calc.distance_m | won }}m, 우회 허용 {{ calc.detour_tolerance }}배 → {{ calc.d_max | won }}m
+ - {{ "실제 소요시간" if calc.time_source == "receipt" else "예상 소요시간(경로 소요시간 × 여유계수)" }} {{ calc.T | won }}초
+ - 기본·거리·시간 요금 합산(주간 기준) {{ calc.day_meter | won }}원 × 할증 {{ calc.multiplier }} = 상한 {{ calc.meter_upper | won }}원
+ - 시간요금과 거리요금을 전 구간에 모두 더한 값으로, 실제 미터기 요금보다 높게 잡은 보수적 상한입니다.
+{% else %}
+2. 정상 요금 상한 계산
+ - 계산하지 못했습니다 (아래 사유 참고).
+{% endif %}
+3. 확인 결과: {{ grade_ko }}
+{% if calc %} - 청구 미터기 요금 {{ calc.charged_meter | won }}원은 상한의 {{ calc.ratio }}배입니다.
+{% endif %}{% for r in reasons %} - {{ r }}
+{% endfor %}
+4. 비고
+ - 본 문서는 자동 계산 결과이며, 위반 여부의 최종 판단은 담당 기관에 있습니다.
+ - 영수증 원본은 신고인이 보관하고 있습니다.

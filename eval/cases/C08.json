@@ -1,0 +1,47 @@
+{
+  "id": "C08",
+  "description": "동대문디자인플라자 → 서울역, 21:00 승차, 시나리오 meter_off",
+  "image": "C08.png",
+  "receipt": {
+    "total_fare": 8000,
+    "meter_fare": 8000,
+    "toll_fee": 0,
+    "ride_start": "2026-11-11T21:00:00+09:00",
+    "ride_end": "2026-11-11T21:18:00+09:00",
+    "night_surcharge": false,
+    "out_of_city_surcharge": false,
+    "distance_km": null,
+    "vehicle_no": "서울54사4788",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "동대문디자인플라자",
+    "address": "서울 중구 을지로 281",
+    "region": "서울",
+    "x": 127.0095,
+    "y": 37.5665,
+    "tags": []
+  },
+  "destination": {
+    "name": "서울역",
+    "address": "서울 용산구 한강대로 405",
+    "region": "서울",
+    "x": 126.9707,
+    "y": 37.5547,
+    "tags": []
+  },
+  "meter_used": false,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 4300,
+    "duration_s": 1080,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "CHECK_NEEDED",
+  "expected_reasons": [
+    "METER_NOT_USED"
+  ],
+  "generated_ratio_target": 0.7
+}

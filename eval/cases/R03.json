@@ -1,0 +1,49 @@
+{
+  "id": "R03",
+  "description": "인사동 → 김포국제공항, 15:00 승차, 시나리오 out_seoul",
+  "image": "R03.png",
+  "receipt": {
+    "total_fare": 28400,
+    "meter_fare": 28400,
+    "toll_fee": 0,
+    "ride_start": "2026-11-06T15:00:00+09:00",
+    "ride_end": "2026-11-06T15:42:00+09:00",
+    "night_surcharge": false,
+    "out_of_city_surcharge": true,
+    "distance_km": null,
+    "vehicle_no": "서울92자8917",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "인사동",
+    "address": "서울 종로구 인사동",
+    "region": "서울",
+    "x": 126.985,
+    "y": 37.574,
+    "tags": []
+  },
+  "destination": {
+    "name": "김포국제공항",
+    "address": "서울 강서구 하늘길 38",
+    "region": "서울",
+    "x": 126.8013,
+    "y": 37.5583,
+    "tags": [
+      "GMP_AIRPORT"
+    ]
+  },
+  "meter_used": true,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 21000,
+    "duration_s": 2400,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "CLEAR_EXCESS",
+  "expected_reasons": [
+    "OUT_OF_CITY_INSIDE_SEOUL"
+  ],
+  "generated_ratio_target": 0.9
+}

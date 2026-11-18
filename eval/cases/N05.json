@@ -1,0 +1,49 @@
+{
+  "id": "N05",
+  "description": "명동역 → 김포국제공항, 11:10 승차, 시나리오 normal",
+  "image": "N05.png",
+  "receipt": {
+    "total_fare": 19900,
+    "meter_fare": 19900,
+    "toll_fee": 0,
+    "ride_start": "2026-11-08T11:10:00+09:00",
+    "ride_end": "2026-11-08T11:50:00+09:00",
+    "night_surcharge": false,
+    "out_of_city_surcharge": false,
+    "distance_km": null,
+    "vehicle_no": "서울55바9491",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "명동역",
+    "address": "서울 중구 명동2가",
+    "region": "서울",
+    "x": 126.986,
+    "y": 37.5609,
+    "tags": []
+  },
+  "destination": {
+    "name": "김포국제공항",
+    "address": "서울 강서구 하늘길 38",
+    "region": "서울",
+    "x": 126.8013,
+    "y": 37.5583,
+    "tags": [
+      "GMP_AIRPORT"
+    ]
+  },
+  "meter_used": true,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 20000,
+    "duration_s": 2100,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "NORMAL",
+  "expected_reasons": [
+    "WITHIN_UPPER_BOUND"
+  ],
+  "generated_ratio_target": 0.66
+}

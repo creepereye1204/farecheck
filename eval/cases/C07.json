@@ -1,0 +1,47 @@
+{
+  "id": "C07",
+  "description": "인사동 → 명동역, 19:10 승차, 시나리오 meter_off",
+  "image": "C07.png",
+  "receipt": {
+    "total_fare": 7700,
+    "meter_fare": 7700,
+    "toll_fee": 0,
+    "ride_start": "2026-11-10T19:10:00+09:00",
+    "ride_end": "2026-11-10T19:22:00+09:00",
+    "night_surcharge": false,
+    "out_of_city_surcharge": false,
+    "distance_km": null,
+    "vehicle_no": "서울63바6532",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "인사동",
+    "address": "서울 종로구 인사동",
+    "region": "서울",
+    "x": 126.985,
+    "y": 37.574,
+    "tags": []
+  },
+  "destination": {
+    "name": "명동역",
+    "address": "서울 중구 명동2가",
+    "region": "서울",
+    "x": 126.986,
+    "y": 37.5609,
+    "tags": []
+  },
+  "meter_used": false,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 2600,
+    "duration_s": 720,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "CHECK_NEEDED",
+  "expected_reasons": [
+    "METER_NOT_USED"
+  ],
+  "generated_ratio_target": 0.9
+}

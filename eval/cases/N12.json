@@ -1,0 +1,47 @@
+{
+  "id": "N12",
+  "description": "서울역 → 송도 센트럴파크, 14:15 승차, 시나리오 normal",
+  "image": "N12.png",
+  "receipt": {
+    "total_fare": 60200,
+    "meter_fare": 60200,
+    "toll_fee": 0,
+    "ride_start": "2026-11-15T14:15:00+09:00",
+    "ride_end": "2026-11-15T15:12:00+09:00",
+    "night_surcharge": false,
+    "out_of_city_surcharge": true,
+    "distance_km": null,
+    "vehicle_no": "서울18사7192",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "서울역",
+    "address": "서울 용산구 한강대로 405",
+    "region": "서울",
+    "x": 126.9707,
+    "y": 37.5547,
+    "tags": []
+  },
+  "destination": {
+    "name": "송도 센트럴파크",
+    "address": "인천 연수구 송도동",
+    "region": "인천",
+    "x": 126.639,
+    "y": 37.3925,
+    "tags": []
+  },
+  "meter_used": true,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 41000,
+    "duration_s": 3500,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "NORMAL",
+  "expected_reasons": [
+    "WITHIN_UPPER_BOUND"
+  ],
+  "generated_ratio_target": 0.95
+}

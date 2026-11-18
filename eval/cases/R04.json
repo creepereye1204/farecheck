@@ -1,0 +1,47 @@
+{
+  "id": "R04",
+  "description": "이태원역 → 홍대입구역, 20:30 승차, 시나리오 out_seoul",
+  "image": "R04.png",
+  "receipt": {
+    "total_fare": 15900,
+    "meter_fare": 15900,
+    "toll_fee": 0,
+    "ride_start": "2026-11-07T20:30:00+09:00",
+    "ride_end": "2026-11-07T20:59:00+09:00",
+    "night_surcharge": false,
+    "out_of_city_surcharge": true,
+    "distance_km": null,
+    "vehicle_no": "서울30아3875",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "이태원역",
+    "address": "서울 용산구 이태원동",
+    "region": "서울",
+    "x": 126.9945,
+    "y": 37.5345,
+    "tags": []
+  },
+  "destination": {
+    "name": "홍대입구역",
+    "address": "서울 마포구 동교동",
+    "region": "서울",
+    "x": 126.9245,
+    "y": 37.5572,
+    "tags": []
+  },
+  "meter_used": true,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 8200,
+    "duration_s": 1800,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "CLEAR_EXCESS",
+  "expected_reasons": [
+    "OUT_OF_CITY_INSIDE_SEOUL"
+  ],
+  "generated_ratio_target": 0.93
+}

@@ -1,0 +1,47 @@
+{
+  "id": "R05",
+  "description": "명동역 → 여의도 한강공원, 12:40 승차, 시나리오 night_day",
+  "image": "R05.png",
+  "receipt": {
+    "total_fare": 15300,
+    "meter_fare": 15300,
+    "toll_fee": 0,
+    "ride_start": "2026-11-08T12:40:00+09:00",
+    "ride_end": "2026-11-08T13:10:00+09:00",
+    "night_surcharge": true,
+    "out_of_city_surcharge": false,
+    "distance_km": null,
+    "vehicle_no": "서울86아6202",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "명동역",
+    "address": "서울 중구 명동2가",
+    "region": "서울",
+    "x": 126.986,
+    "y": 37.5609,
+    "tags": []
+  },
+  "destination": {
+    "name": "여의도 한강공원",
+    "address": "서울 영등포구 여의동로 330",
+    "region": "서울",
+    "x": 126.934,
+    "y": 37.5284,
+    "tags": []
+  },
+  "meter_used": true,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 8900,
+    "duration_s": 1800,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "CLEAR_EXCESS",
+  "expected_reasons": [
+    "NIGHT_SURCHARGE_IN_DAYTIME"
+  ],
+  "generated_ratio_target": 0.85
+}

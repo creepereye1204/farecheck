@@ -1,0 +1,22 @@
+# 요금 규칙·임계값. 명세: docs/fare-rules.md §7
+version: "seoul-medium-2023-02"
+base_fare: 4800
+base_distance_m: 1600
+distance_unit_m: 131
+time_unit_s: 30
+unit_price: 100
+night_tiers:            # [시작, 끝, 할증률]
+  - ["22:00", "23:00", 0.2]
+  - ["23:00", "02:00", 0.4]
+  - ["02:00", "04:00", 0.2]
+out_of_city_rate: 0.2
+combined_cap: 0.6       # Q3
+detour_tolerance: 1.20
+missing_time_factor: 2.0
+rounding_slack_won: 200
+clear_ratio: 1.5
+toll_slack_won: 3000
+daytime_guard_minutes: 5
+out_of_city_exempt_tags: ["ICN_AIRPORT"]   # Q4
+out_of_city_exempt_severity: "check"       # Q4
+low_confidence_threshold: 0.8

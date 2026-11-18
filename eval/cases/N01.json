@@ -1,0 +1,47 @@
+{
+  "id": "N01",
+  "description": "명동역 → 홍대입구역, 10:20 승차, 시나리오 normal",
+  "image": "N01.png",
+  "receipt": {
+    "total_fare": 9200,
+    "meter_fare": 9200,
+    "toll_fee": 0,
+    "ride_start": "2026-11-04T10:20:00+09:00",
+    "ride_end": "2026-11-04T10:44:00+09:00",
+    "night_surcharge": false,
+    "out_of_city_surcharge": false,
+    "distance_km": null,
+    "vehicle_no": "서울93사6617",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "명동역",
+    "address": "서울 중구 명동2가",
+    "region": "서울",
+    "x": 126.986,
+    "y": 37.5609,
+    "tags": []
+  },
+  "destination": {
+    "name": "홍대입구역",
+    "address": "서울 마포구 동교동",
+    "region": "서울",
+    "x": 126.9245,
+    "y": 37.5572,
+    "tags": []
+  },
+  "meter_used": true,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 6800,
+    "duration_s": 1500,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "NORMAL",
+  "expected_reasons": [
+    "WITHIN_UPPER_BOUND"
+  ],
+  "generated_ratio_target": 0.62
+}

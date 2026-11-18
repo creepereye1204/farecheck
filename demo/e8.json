@@ -1,0 +1,25 @@
+{
+  "id": "E8",
+  "description": "보도 사례 재현: 명동→김포공항 48만원 (경로 20km·40분은 docs/fare-rules.md E8 가정값)",
+  "image": "e8_receipt.png",
+  "origin": "명동역",
+  "destination": "김포국제공항",
+  "route": {
+    "distance_m": 20000,
+    "duration_s": 2100,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "receipt": {
+    "total_fare": 480000,
+    "meter_fare": 480000,
+    "toll_fee": 0,
+    "ride_start": "2026-11-18T14:02:00+09:00",
+    "ride_end": "2026-11-18T14:42:00+09:00",
+    "night_surcharge": false,
+    "out_of_city_surcharge": false,
+    "distance_km": null,
+    "vehicle_no": "서울31바1234",
+    "taxi_type": "medium"
+  }
+}

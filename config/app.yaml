@@ -1,0 +1,17 @@
+# 앱 설정 (요금 규칙이 아닌 것). docs/api.md
+airports:
+  # 공항 판별: 장소명 키워드 포함 또는 기준 좌표 반경 이내.
+  # 좌표는 터미널 부근 근사값이다. 실제 운영 전 카카오 로컬 응답으로 확인할 것.
+  radius_m: 3000
+  ICN_AIRPORT:
+    names: ["인천국제공항", "인천공항", "Incheon International Airport"]
+    points: [[126.4505, 37.4492], [126.4330, 37.4692]]   # [x(경도), y(위도)] T1, T2
+  GMP_AIRPORT:
+    names: ["김포국제공항", "김포공항", "Gimpo International Airport"]
+    points: [[126.8013, 37.5583]]
+
+route_cache_ttl_s: 3600
+
+# open-questions Q6: 공식 신고 경로 링크. 확인 전까지 비워 둔다. 링크를 지어내지 않는다.
+# 예: - {label: "...", url: "..."}
+report_channels: []

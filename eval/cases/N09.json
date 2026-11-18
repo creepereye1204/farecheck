@@ -1,0 +1,47 @@
+{
+  "id": "N09",
+  "description": "동대문디자인플라자 → 이태원역, 23:40 승차, 시나리오 normal",
+  "image": "N09.png",
+  "receipt": {
+    "total_fare": 18300,
+    "meter_fare": 18300,
+    "toll_fee": 0,
+    "ride_start": "2026-11-12T23:40:00+09:00",
+    "ride_end": "2026-11-13T00:06:00+09:00",
+    "night_surcharge": true,
+    "out_of_city_surcharge": false,
+    "distance_km": null,
+    "vehicle_no": "서울47아7172",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "동대문디자인플라자",
+    "address": "서울 중구 을지로 281",
+    "region": "서울",
+    "x": 127.0095,
+    "y": 37.5665,
+    "tags": []
+  },
+  "destination": {
+    "name": "이태원역",
+    "address": "서울 용산구 이태원동",
+    "region": "서울",
+    "x": 126.9945,
+    "y": 37.5345,
+    "tags": []
+  },
+  "meter_used": true,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 6100,
+    "duration_s": 1500,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "NORMAL",
+  "expected_reasons": [
+    "WITHIN_UPPER_BOUND"
+  ],
+  "generated_ratio_target": 0.9
+}

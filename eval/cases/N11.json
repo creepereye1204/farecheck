@@ -1,0 +1,47 @@
+{
+  "id": "N11",
+  "description": "명동역 → 수원 화성행궁, 12:00 승차, 시나리오 normal",
+  "image": "N11.png",
+  "receipt": {
+    "total_fare": 47700,
+    "meter_fare": 47700,
+    "toll_fee": 0,
+    "ride_start": "2026-11-14T12:00:00+09:00",
+    "ride_end": "2026-11-14T13:02:00+09:00",
+    "night_surcharge": false,
+    "out_of_city_surcharge": true,
+    "distance_km": null,
+    "vehicle_no": "서울45자8726",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "명동역",
+    "address": "서울 중구 명동2가",
+    "region": "서울",
+    "x": 126.986,
+    "y": 37.5609,
+    "tags": []
+  },
+  "destination": {
+    "name": "수원 화성행궁",
+    "address": "경기 수원시 팔달구 정조로 825",
+    "region": "경기",
+    "x": 127.0137,
+    "y": 37.2819,
+    "tags": []
+  },
+  "meter_used": true,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 38000,
+    "duration_s": 3600,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "NORMAL",
+  "expected_reasons": [
+    "WITHIN_UPPER_BOUND"
+  ],
+  "generated_ratio_target": 0.78
+}

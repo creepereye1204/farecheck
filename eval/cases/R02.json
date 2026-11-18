@@ -1,0 +1,47 @@
+{
+  "id": "R02",
+  "description": "경복궁 → 잠실 롯데월드, 10:10 승차, 시나리오 night_day",
+  "image": "R02.png",
+  "receipt": {
+    "total_fare": 25900,
+    "meter_fare": 25900,
+    "toll_fee": 0,
+    "ride_start": "2026-11-05T10:10:00+09:00",
+    "ride_end": "2026-11-05T10:54:00+09:00",
+    "night_surcharge": true,
+    "out_of_city_surcharge": false,
+    "distance_km": null,
+    "vehicle_no": "서울75자7854",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "경복궁",
+    "address": "서울 종로구 사직로 161",
+    "region": "서울",
+    "x": 126.977,
+    "y": 37.5796,
+    "tags": []
+  },
+  "destination": {
+    "name": "잠실 롯데월드",
+    "address": "서울 송파구 올림픽로 240",
+    "region": "서울",
+    "x": 127.0982,
+    "y": 37.5111,
+    "tags": []
+  },
+  "meter_used": true,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 17000,
+    "duration_s": 2700,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "CLEAR_EXCESS",
+  "expected_reasons": [
+    "NIGHT_SURCHARGE_IN_DAYTIME"
+  ],
+  "generated_ratio_target": 0.92
+}

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Taxi Fare Check · Seoul</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Taxi Fare Check</h1>
+    <p class="sub">Seoul regular (medium) taxis · 서울 중형택시 요금 확인</p>
+    <p id="demo-banner" class="demo" hidden>DEMO — 경로·영수증 인식은 녹화된 응답입니다. 판정·신고서는 실제 엔진이 계산합니다.</p>
+  </header>
+
+  <!-- 1. 업로드 -->
+  <section id="step-upload" class="card">
+    <h2><span class="n">1</span> Receipt photo</h2>
+    <label class="upload">
+      <input type="file" id="image" accept="image/jpeg,image/png,image/heic,image/heif,.heic">
+      <span id="upload-label">Take or choose a photo of your receipt</span>
+    </label>
+    <p class="hint">The photo is read once and not stored. <button type="button" class="link" id="skip-upload">Enter manually instead</button></p>
+    <p id="upload-status" class="status" hidden></p>
+  </section>
+
+  <!-- 2. 확인 -->
+  <section id="step-confirm" class="card" hidden>
+    <h2><span class="n">2</span> Check what we read</h2>
+    <p class="hint">Please correct anything that is wrong. <mark>Yellow</mark> fields need your check.</p>
+    <div class="grid">
+      <label data-f="total_fare">Total paid (KRW)<input type="number" inputmode="numeric" name="total_fare"></label>
+      <label data-f="meter_fare">Meter fare (KRW)<input type="number" inputmode="numeric" name="meter_fare"></label>
+      <label data-f="toll_fee">Toll (KRW)<input type="number" inputmode="numeric" name="toll_fee"></label>
+      <label data-f="vehicle_no">Vehicle no.<input type="text" name="vehicle_no"></label>
+      <label data-f="ride_start">Pick-up time<input type="datetime-local" name="ride_start"></label>
+      <label data-f="ride_end">Drop-off time<input type="datetime-local" name="ride_end"></label>
+      <label data-f="taxi_type">Taxi type
+        <select name="taxi_type">
+          <option value="medium">Regular (중형)</option>
+          <option value="deluxe">Deluxe / Jumbo (모범·대형)</option>
+          <option value="platform">Premium app ride</option>
+          <option value="unknown">Not sure</option>
+        </select>
+      </label>
+      <label data-f="night_surcharge">Night surcharge on receipt
+        <select name="night_surcharge"><option value="">Not shown</option><option value="true">Yes</option><option value="false">No</option></select>
+      </label>
+      <label data-f="out_of_city_surcharge">Out-of-city surcharge on receipt
+        <select name="out_of_city_surcharge"><option value="">Not shown</option><option value="true">Yes</option><option value="false">No</option></select>
+      </label>
+    </div>
+  </section>
+
+  <!-- 3. 경로 -->
+  <section id="step-trip" class="card" hidden>
+    <h2><span class="n">3</span> Where did you go?</h2>
+    <div class="place" id="origin-box">
+      <label>From<input type="search" id="origin-q" placeholder="e.g. Myeongdong Station / 명동역" autocomplete="off"></label>
+      <ul class="results" id="origin-results"></ul>
+      <p class="chosen" id="origin-chosen" hidden></p>
+    </div>
+    <div class="place" id="dest-box">
+      <label>To<input type="search" id="dest-q" placeholder="e.g. Gimpo Airport / 김포공항" autocomplete="off"></label>
+      <ul class="results" id="dest-results"></ul>
+      <p class="chosen" id="dest-chosen" hidden></p>
+    </div>
+    <label class="check"><input type="checkbox" id="meter-not-used"> The driver did not turn on the meter</label>
+    <label class="check"><input type="checkbox" id="via-app"> I called this taxi with an app (Uber, Kakao T…)</label>
+    <label>Explanation language
+      <select id="lang">
+        <option value="en">English</option><option value="ja">日本語</option><option value="zh">中文</option>
+        <option value="ko">한국어</option>
+      </select>
+    </label>
+    <button type="button" id="judge-btn" class="primary" disabled>Check my fare</button>
+    <p id="judge-status" class="status" hidden></p>
+  </section>
+
+  <!-- 4. 결과 -->
+  <section id="step-result" class="card" hidden>
+    <div id="grade" class="grade"></div>
+    <dl class="nums">
+      <div><dt>Charged (meter)</dt><dd id="r-charged"></dd></div>
+      <div><dt>Highest normal fare</dt><dd id="r-upper"></dd></div>
+      <div><dt>Ratio</dt><dd id="r-ratio"></dd></div>
+    </dl>
+    <p id="explanation" class="explanation"></p>
+    <h3>Report in Korean (for the city officer)</h3>
+    <pre id="report" class="report"></pre>
+    <button type="button" id="copy-btn" class="primary">Copy report</button>
+    <p id="copy-status" class="status" hidden></p>
+    <div id="channels" hidden>
+      <h3>Where to report</h3>
+      <ul id="channel-list"></ul>
+    </div>
+    <p class="hint">This is an automatic calculation. A city officer makes the final decision.</p>
+    <button type="button" id="restart" class="link">Check another receipt</button>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "id": "X05",
+  "description": "서울역 → 강남역, 00:30 승차, 시나리오 clear",
+  "image": "X05.png",
+  "receipt": {
+    "total_fare": 176900,
+    "meter_fare": 176900,
+    "toll_fee": 0,
+    "ride_start": "2026-11-08T00:30:00+09:00",
+    "ride_end": "2026-11-08T01:05:00+09:00",
+    "night_surcharge": true,
+    "out_of_city_surcharge": false,
+    "distance_km": null,
+    "vehicle_no": "서울94사3597",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "서울역",
+    "address": "서울 용산구 한강대로 405",
+    "region": "서울",
+    "x": 126.9707,
+    "y": 37.5547,
+    "tags": []
+  },
+  "destination": {
+    "name": "강남역",
+    "address": "서울 강남구 역삼동",
+    "region": "서울",
+    "x": 127.0276,
+    "y": 37.4979,
+    "tags": []
+  },
+  "meter_used": true,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 9800,
+    "duration_s": 2100,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "CLEAR_EXCESS",
+  "expected_reasons": [
+    "FAR_OVER_UPPER_BOUND"
+  ],
+  "generated_ratio_target": 6.4
+}

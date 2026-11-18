@@ -1,0 +1,47 @@
+{
+  "id": "N10",
+  "description": "잠실 롯데월드 → 서울역, 02:20 승차, 시나리오 normal",
+  "image": "N10.png",
+  "receipt": {
+    "total_fare": 23000,
+    "meter_fare": 23000,
+    "toll_fee": 0,
+    "ride_start": "2026-11-13T02:20:00+09:00",
+    "ride_end": "2026-11-13T03:06:00+09:00",
+    "night_surcharge": true,
+    "out_of_city_surcharge": false,
+    "distance_km": null,
+    "vehicle_no": "서울44아2815",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "잠실 롯데월드",
+    "address": "서울 송파구 올림픽로 240",
+    "region": "서울",
+    "x": 127.0982,
+    "y": 37.5111,
+    "tags": []
+  },
+  "destination": {
+    "name": "서울역",
+    "address": "서울 용산구 한강대로 405",
+    "region": "서울",
+    "x": 126.9707,
+    "y": 37.5547,
+    "tags": []
+  },
+  "meter_used": true,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 15700,
+    "duration_s": 2700,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "NORMAL",
+  "expected_reasons": [
+    "WITHIN_UPPER_BOUND"
+  ],
+  "generated_ratio_target": 0.7
+}

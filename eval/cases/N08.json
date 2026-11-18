@@ -1,0 +1,47 @@
+{
+  "id": "N08",
+  "description": "강남역 → 명동역, 22:30 승차, 시나리오 normal",
+  "image": "N08.png",
+  "receipt": {
+    "total_fare": 24400,
+    "meter_fare": 24400,
+    "toll_fee": 0,
+    "ride_start": "2026-11-11T22:30:00+09:00",
+    "ride_end": "2026-11-11T23:11:00+09:00",
+    "night_surcharge": true,
+    "out_of_city_surcharge": false,
+    "distance_km": null,
+    "vehicle_no": "서울29자7157",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "강남역",
+    "address": "서울 강남구 역삼동",
+    "region": "서울",
+    "x": 127.0276,
+    "y": 37.4979,
+    "tags": []
+  },
+  "destination": {
+    "name": "명동역",
+    "address": "서울 중구 명동2가",
+    "region": "서울",
+    "x": 126.986,
+    "y": 37.5609,
+    "tags": []
+  },
+  "meter_used": true,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 9600,
+    "duration_s": 2280,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "NORMAL",
+  "expected_reasons": [
+    "WITHIN_UPPER_BOUND"
+  ],
+  "generated_ratio_target": 0.84
+}

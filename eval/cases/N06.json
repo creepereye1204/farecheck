@@ -1,0 +1,47 @@
+{
+  "id": "N06",
+  "description": "인사동 → 여의도 한강공원, 17:45 승차, 시나리오 normal",
+  "image": "N06.png",
+  "receipt": {
+    "total_fare": 17200,
+    "meter_fare": 17200,
+    "toll_fee": 0,
+    "ride_start": "2026-11-09T17:45:00+09:00",
+    "ride_end": "2026-11-09T18:16:00+09:00",
+    "night_surcharge": false,
+    "out_of_city_surcharge": false,
+    "distance_km": null,
+    "vehicle_no": "서울37사2754",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "인사동",
+    "address": "서울 종로구 인사동",
+    "region": "서울",
+    "x": 126.985,
+    "y": 37.574,
+    "tags": []
+  },
+  "destination": {
+    "name": "여의도 한강공원",
+    "address": "서울 영등포구 여의동로 330",
+    "region": "서울",
+    "x": 126.934,
+    "y": 37.5284,
+    "tags": []
+  },
+  "meter_used": true,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 9200,
+    "duration_s": 1920,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "NORMAL",
+  "expected_reasons": [
+    "WITHIN_UPPER_BOUND"
+  ],
+  "generated_ratio_target": 0.93
+}

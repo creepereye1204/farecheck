@@ -1,0 +1,47 @@
+{
+  "id": "C02",
+  "description": "경복궁 → 강남역, 12:30 승차, 시나리오 check",
+  "image": "C02.png",
+  "receipt": {
+    "total_fare": 30600,
+    "meter_fare": 30600,
+    "toll_fee": 0,
+    "ride_start": "2026-11-05T12:30:00+09:00",
+    "ride_end": "2026-11-05T13:10:00+09:00",
+    "night_surcharge": false,
+    "out_of_city_surcharge": false,
+    "distance_km": null,
+    "vehicle_no": "서울17아1695",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "경복궁",
+    "address": "서울 종로구 사직로 161",
+    "region": "서울",
+    "x": 126.977,
+    "y": 37.5796,
+    "tags": []
+  },
+  "destination": {
+    "name": "강남역",
+    "address": "서울 강남구 역삼동",
+    "region": "서울",
+    "x": 127.0276,
+    "y": 37.4979,
+    "tags": []
+  },
+  "meter_used": true,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 12400,
+    "duration_s": 2400,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "CHECK_NEEDED",
+  "expected_reasons": [
+    "OVER_UPPER_BOUND"
+  ],
+  "generated_ratio_target": 1.32
+}

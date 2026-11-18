@@ -1,0 +1,47 @@
+{
+  "id": "X03",
+  "description": "명동역 → 동대문디자인플라자, 18:20 승차, 시나리오 clear",
+  "image": "X03.png",
+  "receipt": {
+    "total_fare": 30400,
+    "meter_fare": 30400,
+    "toll_fee": 0,
+    "ride_start": "2026-11-06T18:20:00+09:00",
+    "ride_end": "2026-11-06T18:35:00+09:00",
+    "night_surcharge": false,
+    "out_of_city_surcharge": false,
+    "distance_km": null,
+    "vehicle_no": "서울88사7163",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "명동역",
+    "address": "서울 중구 명동2가",
+    "region": "서울",
+    "x": 126.986,
+    "y": 37.5609,
+    "tags": []
+  },
+  "destination": {
+    "name": "동대문디자인플라자",
+    "address": "서울 중구 을지로 281",
+    "region": "서울",
+    "x": 127.0095,
+    "y": 37.5665,
+    "tags": []
+  },
+  "meter_used": true,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 3200,
+    "duration_s": 900,
+    "toll_won": 0,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "CLEAR_EXCESS",
+  "expected_reasons": [
+    "FAR_OVER_UPPER_BOUND"
+  ],
+  "generated_ratio_target": 3.1
+}

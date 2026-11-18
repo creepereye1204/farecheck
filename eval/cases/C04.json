@@ -1,0 +1,49 @@
+{
+  "id": "C04",
+  "description": "서울역 → 인천국제공항 제1여객터미널, 08:00 승차, 시나리오 check",
+  "image": "C04.png",
+  "receipt": {
+    "total_fare": 99200,
+    "meter_fare": 92600,
+    "toll_fee": 6600,
+    "ride_start": "2026-11-07T08:00:00+09:00",
+    "ride_end": "2026-11-07T09:00:00+09:00",
+    "night_surcharge": false,
+    "out_of_city_surcharge": false,
+    "distance_km": null,
+    "vehicle_no": "서울67사1288",
+    "taxi_type": "medium"
+  },
+  "origin": {
+    "name": "서울역",
+    "address": "서울 용산구 한강대로 405",
+    "region": "서울",
+    "x": 126.9707,
+    "y": 37.5547,
+    "tags": []
+  },
+  "destination": {
+    "name": "인천국제공항 제1여객터미널",
+    "address": "인천 중구 공항로 272",
+    "region": "인천",
+    "x": 126.4505,
+    "y": 37.4492,
+    "tags": [
+      "ICN_AIRPORT"
+    ]
+  },
+  "meter_used": true,
+  "hailed_via_app": false,
+  "route": {
+    "distance_m": 56000,
+    "duration_s": 3500,
+    "toll_won": 6600,
+    "kakao_taxi_estimate_won": null
+  },
+  "route_source": "assumed",
+  "expected_grade": "CHECK_NEEDED",
+  "expected_reasons": [
+    "OVER_UPPER_BOUND"
+  ],
+  "generated_ratio_target": 1.38
+}

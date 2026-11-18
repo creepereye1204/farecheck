@@ -1,0 +1,13 @@
+# 근거 코드별 신고서 문구 (Jinja2 문법, params가 변수로 들어간다)
+WITHIN_UPPER_BOUND: "청구 금액이 정상 요금 상한({{ meter_upper | won }}원) 이내입니다."
+OVER_UPPER_BOUND: "청구 금액이 정상 요금 상한({{ meter_upper | won }}원)을 {{ ratio }}배로 초과합니다. 사실 확인이 필요합니다."
+FAR_OVER_UPPER_BOUND: "청구 금액이 정상 요금 상한({{ meter_upper | won }}원)의 {{ ratio }}배로, 판정 기준({{ clear_ratio }}배)을 넘습니다."
+NIGHT_SURCHARGE_IN_DAYTIME: "영수증에 심야할증이 표시되어 있으나, 승차({{ ride_start }})~하차({{ ride_end }})가 모두 주간 요금 시간대입니다."
+OUT_OF_CITY_INSIDE_SEOUL: "영수증에 시계외할증이 표시되어 있으나, 출발지({{ origin_region }})와 도착지({{ dest_region }})가 모두 서울특별시입니다."
+OUT_OF_CITY_TO_EXEMPT: "영수증에 시계외할증이 표시되어 있으나, 도착지가 시계외할증 예외 대상(인천국제공항)입니다. 현행 규칙 확인이 필요합니다."
+TOLL_MISMATCH: "영수증 통행료({{ receipt_toll | won }}원)가 경로상 통행료({{ route_toll | won }}원)보다 {{ toll_slack | won }}원 넘게 많습니다."
+METER_NOT_USED: "신고인이 미터기를 사용하지 않았다고 진술했습니다."
+APP_CALL_FEE_NOT_MODELED: "앱 호출 탑승으로, 호출료는 상한 계산에 반영하지 않았습니다."
+TAXI_TYPE_UNSUPPORTED: "중형택시가 아니어서(유형: {{ taxi_type }}) 자동 계산 대상이 아닙니다."
+ROUTE_UNAVAILABLE: "도로 경로를 조회하지 못해 상한을 계산하지 못했습니다."
+AMOUNT_MISSING: "결제 금액이 확인되지 않아 상한과 비교하지 못했습니다."
